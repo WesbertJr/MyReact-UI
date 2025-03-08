@@ -3,9 +3,6 @@
 ### A repository for custom react UI components for building applications
 
 ```
-npm create vite@latest
-```
-```
 npm install
 ```
 ```
