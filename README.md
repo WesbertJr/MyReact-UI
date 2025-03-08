@@ -13,4 +13,4 @@ npm run dev
 ```
 
 
-![alt text](public/images/day-1.png?raw=true)
+![alt text](frontend-mastery/public/images/day-1.png?raw=true)
