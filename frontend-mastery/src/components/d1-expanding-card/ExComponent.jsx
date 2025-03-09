@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import ExCard from './ExCard';
-
+import Header from '../Header';
 
 export default function ExComponent() {
     const [activeDiv, setActiveDiv] = useState();
@@ -48,17 +48,14 @@ export default function ExComponent() {
     ]
     return (
         <>
-        <h1 className='pb-4 font-extrabold'>Day 1</h1>
-        <p className="text-2xl text-gray-300/60 pb-4">
-            Expanding Card Component
-        </p>
-            <div className="container flex justify-center items-center w-[80vw]">
-                {images.map(({ imgSrc, label, color }, key) => {
-                    return (
-                        <ExCard key={key} imgSrc={imgSrc} activeDiv={activeDiv} label={label} color={color} id={key} handleClick={handleClick} />
-                    );
-                })}
-            </div>
+        <Header title={"Day 1"} label={"Expanding Card Component"} />
+        <div className="container flex justify-center items-center w-[80vw]">
+            {images.map(({ imgSrc, label, color }, key) => {
+                return (
+                    <ExCard key={key} imgSrc={imgSrc} activeDiv={activeDiv} label={label} color={color} id={key} handleClick={handleClick} />
+                );
+            })}
+        </div>
         <p className="text-2xl text-gray-300/60 pt-4">
             Completed on March 7th 2025
         </p>
