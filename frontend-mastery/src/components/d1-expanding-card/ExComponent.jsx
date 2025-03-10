@@ -47,9 +47,9 @@ export default function ExComponent() {
         }
     ]
     return (
-        <>
+        <div className="">
         <Header title={"Day 1"} label={"Expanding Card Component"} />
-        <div className="container flex justify-center items-center w-[80vw]">
+        <div className="container flex justify-center items-center w-[45vw]">
             {images.map(({ imgSrc, label, color }, key) => {
                 return (
                     <ExCard key={key} imgSrc={imgSrc} activeDiv={activeDiv} label={label} color={color} id={key} handleClick={handleClick} />
@@ -60,7 +60,7 @@ export default function ExComponent() {
             Completed on March 7th 2025
         </p>
         
-        </>
+        </div>
     )
     
 }

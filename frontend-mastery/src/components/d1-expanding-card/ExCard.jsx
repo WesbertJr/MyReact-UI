@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function ExCard({ imgSrc, label, color, activeDiv, id, handleClick }) {
     return (
         <div className={`panel object-contain flex-[0.5] m-2 relative bg-auto bg-no-repeat bg-center cursor-pointer rounded-xl  h-[35vh] transition-flex duration-125 ease-in overflow-hidden hover:active  ${color} ${activeDiv === id ? 'active' : ''}`}
-        style={{ backgroundImage: `url(${imgSrc})`, backgroundSize: '210px 210px' }}
+        style={{ backgroundImage: `url(${imgSrc})`, backgroundSize: '140px 140px' }}
         key={id}
         onClick={() => handleClick(id)}>
             
