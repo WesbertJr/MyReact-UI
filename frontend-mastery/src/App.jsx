@@ -5,7 +5,7 @@ import ExComponent from './components/d1-expanding-card/ExComponent'
 
 function App() {
   return (
-    <div className='container grid grid-cols-1 gap-y-1'>
+    <div className='container grid grid-cols-1 gap-y-2'>
       <ExComponent />
       <Loader />
     </div>
